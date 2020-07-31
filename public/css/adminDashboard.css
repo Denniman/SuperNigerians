@@ -57,15 +57,6 @@
     background-color: #fff;
   }
   
-  /* [tabindex="-1"]:focus:not(:focus-visible) {
-    outline: 0 !important;
-  }
-  
-  hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-  } */
 
   /* added this */
 #accordionSidebar {
@@ -82,16 +73,6 @@
     margin-bottom: 1rem;
   }
   
-  /* abbr[title],
-  abbr[data-original-title] {
-    text-decoration: underline;
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted;
-    cursor: help;
-    border-bottom: 0;
-    -webkit-text-decoration-skip-ink: none;
-    text-decoration-skip-ink: none;
-  } */
   
   address {
     margin-bottom: 1rem;
@@ -172,38 +153,6 @@
     text-decoration: none;
   }
   
-  /* pre,
-  code,
-  kbd,
-  samp {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 1em;
-  } */
-  
-  /* pre {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    overflow: auto;
-    -ms-overflow-style: scrollbar;
-  }
-  
-  figure {
-    margin: 0 0 1rem;
-  }
-  
-  img {
-    vertical-align: middle;
-    border-style: none;
-  }
-  
-  svg {
-    overflow: hidden;
-    vertical-align: middle;
-  }
-  
-  table {
-    border-collapse: collapse;
-  } */
   
   caption {
     padding-top: 0.75rem;
