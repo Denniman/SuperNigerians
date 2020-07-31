@@ -12,14 +12,15 @@
   <title>Admin Dashboard</title>
 
   <!-- Custom fonts for this template-->
-  <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
   <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Datatable CSS -->
+  <link rel="stylesheet" href="  //cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
 
   <!-- Custom styles for this template-->
   <link href="/css/adminDashboard.css" rel="stylesheet">
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 </head>
 
@@ -49,42 +50,25 @@
           <span>Dashboard</span></a>
       </li>
 
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Admin Panel
-      </div>
-
-    
-
-   
+      <!-- Nav Item - Posts -->
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Posts</span></a>
+      </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
-
-
-      <!-- Nav Item - Charts -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li> -->
-
-      <!-- Nav Item - Tables -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li> -->
-
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
+      <!-- Nav Item - Users -->
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Users</span></a>
+      </li>
 
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        <button role="button" class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
 
     </ul>
@@ -100,63 +84,90 @@
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
           <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+          <button role="button" id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
-
-          <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form>
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
 
             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
               </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
             </li>
 
+<<<<<<< HEAD
   
 
            
 
+=======
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+
+>>>>>>> 8ab8547f8841bde509b2069aca57a7c31386cfa2
             <div class="topbar-divider d-none d-sm-block"></div>
 
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Dennis</span>
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-lg-inline text-gray-600 small">ADMIN</span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
-                </a>
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                   Settings
@@ -184,7 +195,10 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+<<<<<<< HEAD
             <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
+=======
+>>>>>>> 8ab8547f8841bde509b2069aca57a7c31386cfa2
           </div>
 
           <!-- Content Row -->
@@ -218,7 +232,7 @@
                     </div>
                     <div class="col-auto">
                       <i class="fa fa-users fa-2x" aria-hidden="true"></i>
-                     
+
                     </div>
                   </div>
                 </div>
@@ -231,20 +245,15 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Pending Users</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                        </div>
-                        <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">70</div>
                         </div>
                       </div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                      <i class="fa fa-users fa-2x" aria-hidden="true"></i>
                     </div>
                   </div>
                 </div>
@@ -268,13 +277,14 @@
               </div>
             </div>
 
-           
+
 
 
           </div>
 
           <!-- Content Row -->
 
+<<<<<<< HEAD
           <div class="row">
 
             <!-- Area Chart -->
@@ -332,10 +342,13 @@
                 </div>
               </div>
             </div>
+=======
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Posts</h1>
+>>>>>>> 8ab8547f8841bde509b2069aca57a7c31386cfa2
           </div>
-
-          <!-- Content Row -->
           <div class="row">
+<<<<<<< HEAD
 
 
             <div class="col-lg-6 mb-4">
@@ -354,13 +367,50 @@
                     voluptatem ipsa voluptatum? <a target="_blank" rel="nofollow" href="#">page</a>, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
                   <a target="_blank" rel="nofollow" href="#">Browse Illustrations on this page &rarr;</a>
                 </div>
+=======
+            <div class="col-12">
+              <div class="table-responsive">
+                <table id="postsTable" class="table table-bordered table-hover">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Btns</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Tobi</td>
+                      <td>Osimosu</td>
+                      <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic dolores ut
+                        consequuntur! Inventore, dicta praesentium nobis labore rerum tempora corrupti quo ut quod,
+                        doloremque a, fugiat expedita minus. Nesciunt neque magni pariatur, in nulla illum ducimus
+                        eveniet fugit tempore sint nostrum perferendis, odit quibusdam et. Non officiis nemo quo illum,
+                        repudiandae excepturi et dicta dolorem minima sint cupiditate obcaecati autem fugit vitae
+                        consectetur iusto reiciendis dolorum recusandae quibusdam. Molestias dolor quo accusantium?
+                        Nobis incidunt sequi tempora quasi magnam atque qui iure provident ipsa suscipit neque, nesciunt
+                        numquam consectetur explicabo, quas quae omnis error veritatis quidem fugiat corporis voluptates
+                        fugit.</td>
+                      <td>Pending</td>
+                      <td>
+                        <div class="row d-flex flex-column">
+                          <div class="col"><a href="#" class="btn btn-primary mb-3">View Post</a></div>
+                          <div class="col"><a href="#" class="btn btn-success mb-3">Approve</a></div>
+                          <div class="col"><a href="#" class="btn btn-secondary mb-3">Disapprove</a></div>
+                          <div class="col"><a href="#" class="btn btn-danger">Delete</a></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+>>>>>>> 8ab8547f8841bde509b2069aca57a7c31386cfa2
               </div>
-
-           
-
             </div>
           </div>
-
         </div>
         <!-- /.container-fluid -->
 
@@ -389,7 +439,8 @@
   </a>
 
   <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -407,9 +458,19 @@
     </div>
   </div>
 
-  <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Boilerplate JS -->
+  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/popper.js"></script>
+
+  <!-- Datatables JS -->
+  <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#postsTable').DataTable();
+    });
+  </script>
 
   <!-- Core plugin JavaScript-->
   <!-- <script src="/js/jquery.easing.min.js"></script> -->
@@ -418,7 +479,13 @@
   <!-- IMPORTANT! -->
   <script src="/js/sb-admin-2.min.js"></script>
 
+<<<<<<< HEAD
  
+=======
+
+
+
+>>>>>>> 8ab8547f8841bde509b2069aca57a7c31386cfa2
 
 </body>
 
